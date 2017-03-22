@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta  charset=utf-8" />
+    <title>oexam-教师注册</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/xunlei.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+</head>
+<body>
+<div class="wp_res">
+    <div class="main_res png">
+        <p style="font-size: x-large;font-family: 微软雅黑;text-align: center;position: relative;top: 20px;">教师注册</p>
+        <form  method=post  action="{:U('add_t')}" style="position: relative;top:20px" enctype="multipart/form-data"  >
+            <div class="form-group" >
+                <label for="exampleInputStudentName1" style="position: relative;width:60px; height:20px;left: 150px;display: table-cell; font-size: large; font-family: 微软雅黑 ">用户名</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="tname" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputStudentName1" placeholder="注册后就不能修改，请慎重填写" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="exampleInputPassword1" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">密码</label>
+                <div style="display: table-cell" >
+                    <input type="password" name="password" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputPassword1" placeholder="密码" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="exampleInputPassword2" style="position: relative;width:100px; height:20px;left: 140px;display: table-cell; font-size: large; font-family: 微软雅黑 ">真实姓名</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="rname" class="form-control"  style="position: relative;width:240px; height:35px;left: 120px;" id="exampleInputPassword2" placeholder="注册后就不能修改，请慎重填写" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="tele" style="position: relative;width:100px; height:20px;left: 140px;display: table-cell; font-size: large; font-family: 微软雅黑 ">联系方式</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="tele" class="form-control"  style="position: relative;width:240px; height:35px;left: 120px;" id="tele" placeholder="联系方式" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="email" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">邮箱</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="email" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="email" placeholder="邮箱" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">头像</label>
+                <div style="display: table-cell">
+                    <input type="file" name="pic"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputFile" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div  style="position: relative;width:60px; height:20px;left: 160px; font-size: large; font-family: 微软雅黑 ">
+                    <input type="submit" class="btn btn-info" value="提交"  style="display: table-cell;position: relative">
+                    <input type="reset" class="btn btn-danger" value="重置" style="display: table-cell;position: relative;left: 260px;top:-30px">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="light png"></div>
+</div>
+</body>
+</html>

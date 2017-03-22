@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta  charset=utf-8" />
+    <title>oexam-学生注册</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/xunlei.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+</head>
+<body>
+<div class="wp_res">
+    <div class="main_res png">
+        <p style="font-size: x-large;font-family: 微软雅黑;text-align: center;position: relative;top: 20px;">学生注册</p>
+        <form  method=post  action="{:U('add')}" style="position: relative;top:20px" enctype="multipart/form-data"  >
+            <div class="form-group" >
+                <label for="exampleInputStudentName1" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">姓名</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="sname" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputStudentName1" placeholder="注册后就不能修改，请慎重填写" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="exampleInputPassword1" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">密码</label>
+                <div style="display: table-cell" >
+                    <input type="password" name="password" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputPassword1" placeholder="密码" required>
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="exampleInputPassword2" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">学号</label>
+                <div style="display: table-cell" >
+                    <input type="text" name="studentid" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputPassword2" placeholder="学号" required>
+                </div>
+            </div>
+
+            <div class="form-group" >
+                <label   style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">性别</label>
+                <div  style="position: relative;width:60px; height:7px;left: 180px;top: 5px; display: table-cell">
+                    <label class="radio-inline" style="display: table-cell">
+                        <input type="radio" name="gender" value=0 checked>男
+                    </label>
+                    <label class="radio-inline" style="display: table-cell;position:relative;left: 30px;">
+                        <input type="radio" name="gender" value=1>女
+                    </label>
+<!--
+                    <input type="password" name="password" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputPassword1" placeholder="密码" required>
+-->
+                </div>
+            </div>
+
+
+        <!--    <div class="form-group">
+                <label class="col-md-2 control-label"style="font-family: 微软雅黑">性别</label>
+                <div class="col-md-8">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" value=0 checked>男
+                    </label>
+                    <label class="radio-inline"style="font-family: 微软雅黑">
+                        <input type="radio" name="gender" value=1>女
+                    </label>
+                </div>
+            </div>-->
+
+            <div class="form-group">
+                <label for="exampleInputBirthdate1"  style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">生日</label>
+                <div style="display: table-cell" >
+                    <input type="date" name="birthdate" class="form-control"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputBirthdate1" placeholder="生日" required>
+                </div>
+            </div>
+
+         <!--   <div class="form-group">
+                <label class="col-md-2 control-label"style="font-family: 微软雅黑">爱好</label>
+                <div class="col-md-8">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="hobby[]" value="旅游">旅游
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="hobby[]" value="登山">登山
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="hobby[]" value="健身">健身
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="hobby[]" name="上网">上网
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="hobby[]" value="游泳">游泳
+                    </label>
+                </div>
+            </div>-->
+
+            <div class="form-group">
+                <label style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">学历</label>
+                <div style="display: table-cell">
+                    <select  class="form-control" style="position: relative;width:240px; height:35px;left: 160px;" name="degree">
+                        <option value="">请选择</option>
+                        <option value=0>小学</option>
+                        <option value=1>初中</option>
+                        <option value=2>高中</option>
+                        <option value=3>大学</option>
+                        <option value=4>研究生</option>
+                        <option value=5>博士生</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputTextarea1" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">简介</label>
+                <div style="display: table-cell">
+                    <textarea class="form-control"  style="position: relative;width:240px; height:105px;left: 160px;" id="exampleInputTextarea1" placeholder="简介" name="intro"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile" style="position: relative;width:60px; height:20px;left: 160px;display: table-cell; font-size: large; font-family: 微软雅黑 ">头像</label>
+                <div style="display: table-cell">
+                    <input type="file" name="pic"  style="position: relative;width:240px; height:35px;left: 160px;" id="exampleInputFile" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div  style="position: relative;width:60px; height:20px;left: 160px; font-size: large; font-family: 微软雅黑 ">
+                    <input type="submit" class="btn btn-info" value="提交"  style="display: table-cell;position: relative">
+                    <input type="reset" class="btn btn-danger" value="重置" style="display: table-cell;position: relative;left: 260px;top:-30px">
+                </div>
+            </div>
+        </form>
+        </div>
+  <div class="light png"></div>
+</div>
+</body>
+</html>

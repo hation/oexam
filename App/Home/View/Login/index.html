@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>oexam-用户登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="__PUBLIC__/assets/css/login.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/stylesheets/main.css">
+    <script src="__PUBLIC__/assets/js/jquery-1.9.1.js"></script>
+    <link href="__PUBLIC__/assets/css/msgbox.css" rel="stylesheet"/>
+    <script src="__PUBLIC__/assets/js/msgbox.js"></script>
+</head>
+<body>
+<div class="toparea">
+    <div class="logo">
+        <a href="__APP__"><img src="__PUBLIC__/assets/images/logo.gif" /></a>
+    </div>
+    <div class="slogan">
+        <img src="__PUBLIC__/assets/images/slogan.png" />
+    </div>
+</div>
+<div class="mainarea">
+    <div class="wrap-login">
+        <div class="centerpart">
+            <div class="tips"><span></span></div>
+            <div class="content">
+                <div class="l">
+                    <div class="innercon">
+                        <h1 style="text-align: center">用户登录</h1>
+                        <div class="tabcon">
+                            <form  method=post  action="{:U('Login/login')}" style="position: relative;top: 30px;" enctype="multipart/form-data"  >
+                                <div class="row ftsty-1" style="font-family: 微软雅黑">账号:</div>
+                                <div class="row">
+                                    <input id="username" class="input-1" value="{$Think.cookie.user }" placeholder="用户名" name="username" type="text" />
+                                </div>
+                                <div class="row ftsty-1" style="font-family: 微软雅黑">密码:</div>
+                                <div class="row">
+                                    <input id="password" class="input-1" name="password" value="{$Think.cookie.password}" type="password" />
+                                </div>
+                                <div class="row guide">
+                                    <a href="{:U('Retrieve/index')}" target="_blank">忘记密码</a>
+                                    <label>
+                                        <input type="checkbox" name="re" value="1" />
+                                        记住我的密码
+                                    </label>
+                                </div>
+                                <div class="row margin-top-10">
+                                    <input  type="submit" class="btn-1" style="position: relative;left:80px;width: 180px" value="登录"  />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="qrcode margin-left-60">
+                        <div class="con"> <a href="{:U('Register/index')}"><img title="点击图片注册" src="__PUBLIC__/assets/images/signup.jpg" width="200px" height="120px" /></a></div>
+                        <div class="con">
+                            <p style="width: 200px;margin-top: 20px;margin-left: 30px">
+                                没有账号？点击图片注册
+                            </p>
+                        </div>
+                    </div>
+                    <div class="customerservice">
+                        <span class="ftsty-2">客服QQ：</span>
+                        <span class="ftsty-3">331596350</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
